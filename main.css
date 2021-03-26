@@ -1,0 +1,492 @@
+/* Vikram's CSS for 210 portfolio site */        
+
+/* resets margin and padding */    
+html, body {
+
+margin:0;
+
+padding:0;
+
+}
+
+body{      
+  background-color: #618685;   
+  font-family: 'Oswald', sans-serif;  
+}
+
+/*NAVIGATION BAR*/
+#navbar{
+    margin-left: 460px;
+    position:relative;     
+    margin-top: 35px;     
+    overflow: hidden;     
+    width: 100%;    
+    text-align: center;    
+    transition: 0.5s ease;
+}     
+
+#navbar li{
+    list-style-type: none;     
+    display: inline;     
+    padding: 20px;     
+    font-family: Oswald;     
+    font-size: 25px;     
+    color: #FFFFFF;
+	text-align: center;
+}     
+
+#navbar li a{ 
+    position: relative; 
+    color: white;     
+    text-decoration: none;
+	text-align: center;
+}  
+
+#navbar li a:after{  
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;  
+    width: 0%;  
+    content: '';  
+    color: transparent;  
+    background: #fff;  
+    height: 5px;  
+    transition: all .35s;  
+	text-align: center;
+}  
+
+#navbar li a:hover:after{  
+    width:100%;  
+}  
+
+/* LANDING PAGE */
+#landing{
+	background-color: #618685;
+	margin-top: -100px;
+	height:80vh;
+	width:100%;
+}
+
+/* animation */
+@keyframes fadein {
+
+  0% {
+		color: #FFFFFF;
+    opacity: 0;
+  }
+
+  75% {
+		color: #FFFFFF;
+    opacity: .75;
+  }
+
+  100% {
+		color: #FFFFFF;
+    opacity: 1;
+  }
+}
+
+/*end of animation*/
+
+#landing p:first-child {
+
+/* animation attributes */
+  animation-name: fadein;
+  animation-duration: 5s;
+/*end animation attributes*/
+	color:#FFFFFF;
+	text-align: center;
+	font-size: 100px;
+	padding-top: 10%;
+	padding-bottom:0;
+    font-family: 'Oswald', sans-serif;  
+	font-weight: lighter;
+}
+
+
+ #landing p:nth-child(2) {
+/*text animation attributes*/
+	 animation-name: fadein;
+	 animation-duration: 10s;
+/*end text animation attributes*/
+	color:#FFFFFF;
+	 padding:0;
+	 text-align:center;
+	 font-size: 50px;
+	 font-weight:lighter;
+ }
+
+  #landing p:nth-child(3){
+/*text animation attributes*/
+		animation-name: fadein;
+		animation-duration: 15s;
+/*end text animation attributes*/
+		color: #FFFFFF;
+		text-align:center;
+		font-size:180%;
+		font-weight: lighter;
+	}
+
+	#landing p:nth-child(4){
+/*text animation attributes*/
+		animation-name: fadein;
+		animation-duration: 20s;
+/*end text animation attributes*/
+		color: #FFFFFF;
+		text-align:center;
+		font-size:180%;
+		font-weight: lighter;
+	}
+
+
+/* FOOTER */   
+#footer{   
+    position: fixed;  
+    bottom: 0;  
+    text-align: center;  
+    width: 100%;   
+    height: 60px;
+    vertical-align: middle;   
+    background-color: #fff;  
+    clear: both;
+}   
+
+/* sets design for paragraph text in the footer */    
+#footer p{  
+    display: inline; 
+    text-align: center; 
+    float: left;  
+    color: #618685;   
+    font-size: 20px;
+    width: 100%;
+	font-family: 'Oswald', sans-serif;  
+}  
+
+#footer img{  
+    display: inline;  
+    float: right;  
+    margin-top: 15px;  
+    margin-right: 15px;
+	transition: 0.5s linear;
+}
+
+#footer img:hover{
+	opacity: 0.8;
+}
+
+
+/* About Page */
+
+/* css design for the box that gives current page title*/    
+.aboutpagebox{
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	left: 305px;
+	top: 200px;
+	font-size: 30px;
+	color: #618685;
+	display: table;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	height: 5%
+}
+
+.white{
+	background: #FFFFFF;
+
+}
+
+.projectspagebox{
+	width: 100px;
+	height: 15px;
+	position: absolute;
+	left: 325px;
+	top: 200px;
+	font-size: 30px;
+	color: #618685;
+	display: table;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	height: 5%
+}
+
+/* css design for rectangle shape that holds about paragraph text */    
+.aboutdescriptionbox{
+	width:900px;
+	height:350px;
+	position: absolute;
+	left: 649px;
+	top: 235px;
+	font-size: 18px;
+	color: #618685;
+	display: table;
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.aboutpicture{
+	position: absolute;
+	top: 363px;
+	left: 200px;
+}
+
+
+/* Resume Page */
+
+/* css design for resume container layout */    
+.resume-container {
+	height: 1300px;
+    color: #FFFFFF; 
+    display: grid;
+	margin-left: 15%;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+}  
+
+.resume-container h2{  
+    grid-column: 2 / 6;  
+    grid-row: 1;
+	margin-left: 22%;
+    padding-top: 15px;  
+    width: 480px;  
+    height: 130px;  
+    text-transform: uppercase;  
+    padding: 30px 30px 0px 30px;  
+    font-size: 65px;  
+    background-color: #203058;  
+    border: 8px #203058 solid;  
+    text-align: center;
+    color: 203058;
+}
+
+.resume-container h3{  
+    grid-column: 2 / 6;  
+    width: 500px;  
+    height: 55px;
+	margin-left: 24.5%;
+    text-transform: uppercase;  
+    text-align: center;  
+    font-size: 40px;  
+    background-color: #87919c;  
+    color: #fff;  
+    margin-top: -200px;  
+    margin-bottom: 30px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}  
+
+.resume-container h4{  
+    text-transform: uppercase;  
+    text-decoration: underline;  
+    text-decoration-color: #fff;  
+    font-size: 25px;  
+    margin-bottom: -15px;  
+	text-align: left;
+}  
+
+.resume-container h5{  
+    text-transform: uppercase;  
+    font-size: 23px;  
+    margin-bottom: -3px;  
+	text-align: left;
+}  
+
+.resume-container h6{  
+    text-transform: uppercase;  
+    font-size: 15px;  
+    margin-bottom: -20px;  
+    margin-top: 25px;
+	text-align: left;
+}  
+
+.resume-container p{  
+    font-size: 19px;  
+    margin-bottom: -20px;  
+	text-align: left;
+}  
+
+.resume-container li{  
+    font-size: 19px;
+    margin-bottom: -3px;
+    list-style-type: none;
+	text-align: left;
+}  
+
+.resume-container a{
+	grid-column: 2;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 35px;
+	text-align: left;
+	padding-top: 10px;
+	margin-top: -50px;
+	color: #fff;
+	background-color: #203058;
+	height: 60px;
+	width: 230px;
+	border-radius: 15px;
+	transition: 0.5s ease;
+
+}
+
+.resume-container a:hover{
+	opacity: 0.8;
+	transform: translateY(10px); 
+}
+
+#resume_side_1{  
+    grid-column: 2 / 4;  
+    width: 80%;
+	margin-top: -250px;
+	text-align: right;
+}  
+
+#resume_side_2{  
+    grid-column: 4 / 7;  
+    width: 85%;  
+	margin-top: -250px;
+}  
+
+
+/* Projects Page */
+
+/* the following three snippets of code are for the preview images for the projects */    
+.zoommuseum {
+  padding: 50px;
+  transition: transform .2s;
+  margin: 0 auto;
+  position: absolute;
+  left: 275px;
+  top: 350px;
+  width: 120px;
+}
+
+.zoomvim {
+  padding: 50px;
+  transition: transform .2s;
+  margin: 0 auto;
+  position: absolute;
+  left: 680px;
+  top: 350px;
+}
+
+.zoomlinkedin {
+  padding: 50px;
+  transition: transform .2s; 
+  margin: 0 auto;
+  position: absolute;
+  left: 1079px;
+  top: 350px;
+}
+
+/* enables zoom animation for each project preview */    
+.zoommuseum:hover {
+  transform: scale(1.5);
+}
+
+.zoomvim:hover {
+  transform: scale(1.5);
+}
+
+.zoomlinkedin:hover {
+  transform: scale(1.5);
+}
+
+/* the next three snippets of code are for the labels below each project preview */    
+.museumpagebox{
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	left: 337px;
+	top: 600px;
+	font-size: 18px;
+	color: #618685;
+	display: table;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-align: center;
+}
+
+.vimpagebox{
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	left: 745px;
+	top: 600px;
+	font-size: 18px;
+	color: #618685;
+	display: table;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-align: center;
+}
+
+.linkedinpagebox{
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	left: 1141px;
+	top: 600px;
+	font-size: 18px;
+	color: #618685;
+	display: table;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-align: center;
+}
+
+
+/* Contact Page */
+.pagebox{
+	width: 140px;
+	height: 50px;
+	position: absolute;
+	left: 275px;
+	top: 200px;
+	font-size: 30px;
+	color: #618685;
+	display: table;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+}
+
+/* sets size and positioning for icon contact links */    
+.linkedin{
+	position: absolute;
+	top: 386px;
+	left: 500px;
+	width: 100px;
+	height: 75px;
+}
+
+.instagram{
+	position: absolute;
+	top: 390px;
+	left: 1000px;
+	width: 100px;
+	height: 75px;
+}
+
+.youtube{
+	position: absolute;
+	top: 390px;
+	left: 750px;
+	width: 100px;
+	height: 75px;
+}
+
+
+
+
